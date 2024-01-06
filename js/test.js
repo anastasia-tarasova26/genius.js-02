@@ -164,8 +164,8 @@
 
 /// ------Тернарний оператор------///
 
-// 2 + 2 === 4 ? console.log("1") : console.log("2");
-// 5 * 5 === 24 ? console.log(true) : console.log(false);
+// 2 + 2 === 4 ? console.log("1") : console.log("2"); //1
+// 5 * 5 === 24 ? console.log(true) : console.log(false); //false
 
 // if (5 + 5 === 10) {
 //   console.log("5+5 ===10");
@@ -187,6 +187,21 @@
 
 // ----------------------------------switch/case----------------------------------//
 
+// let num = 5;
+// switch (num) {
+//   case 0:
+//     console.log(0);
+//     break;
+
+//   case 5:
+//     console.log(5);
+//     break;
+
+//   case 10:
+//     console.log(10);
+//     break;
+// }
+
 // let cost = null;
 // const sub = "premium";
 
@@ -201,8 +216,60 @@
 
 //   case "premium":
 //     cost = 500;
+//   default:
+//     console.log("Invalid sub");
 // }
 
 // console.log(cost);
 
 // ----------------------------------Вирішення логічних задач та побудова алгоритмів----------------------------------//
+
+// const min = prompt("Введіть хвилину");
+
+// if (min >= 0 && min <= 14) {
+//   console.log("Перша чверть");
+// } else if (min >= 15 && min <= 29) {
+//   console.log("Друга чверть");
+// } else if (min >= 30 && min <= 44) {
+//   console.log("Третя чверть");
+// } else if (min >= 45 && min <= 59) {
+//   console.log("Четверта чверть");
+// }
+
+// const value = prompt("Введіть назву товару").toLowerCase();
+// let cost;
+
+// switch (value) {
+//   case "яблуко":
+//     cost = 10;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   case "вишня":
+//     cost = 50;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   case "груша":
+//     cost = 45;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   case "кавун":
+//     cost = 70;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   case "чорниця":
+//     cost = 110;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   case "диня":
+//     cost = 150;
+//     alert(`${value} коштує ${cost} гривень`);
+//     break;
+
+//   default:
+//     alert(`Товару ${value}, немає в наявності`);
+// }
